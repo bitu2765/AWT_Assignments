@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        background-color:ghostwhite;
+    }
+</style>
+<body>
+    <center><h1>Welcome to Profile form</h1></center>
+    <form action="/table" method="post">
+        First name:
+        <input type="text" name="fname" required maxlength="10"><br>
+        <br> Last name:
+  
+        <input type="text" name="lname" required maxlength="10"><br>
+
+        <br> Email: 
+        <input type="email" id="email" name="email" required maxlength="30" pattern="[^ @]*@[^ @]*"><br>
+
+        <br> Mobile number: 
+        <input type="number" id="number" name="number" required maxlength="10"><br>
+
+        <br>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="bd" required><br>
+
+        <br> Gender: 
+        <br>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label><br>
+
+        <br> Address:
+        <input type="text" name="address" required maxlength="50"><br><br> 
+        <!-- <textarea name="comment" form="usrform">s</textarea><br><br> -->
+
+        <label for="inst">Select Institue: </label>
+        <select name="institute" id="selins" required>
+        <option value="CSPIT">CSPIT</option>
+        <option value="DEPSTAR">DEPSTAR</option>
+        <option value="IIIM">IIIM</option>
+        <option value="RPCP">RPCP</option>
+        </select>
+        <br>
+
+        <br>
+        <label for="dept">Select Department: </label>
+        <select name="dept" id="seldept" required>
+        <option value="CE">CE</option>
+        <option value="CSE">CSE</option>
+        <option value="EE">EE</option>
+        <option value="ME">ME</option>
+        <option value="EC">EC</option>
+        </select>
+        <br>
+
+        <br>
+        <label for="sem">Select Semester: </label>
+        <select id="selsem" required>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        </select>
+        <br>
+
+        <br>
+        <input type="submit">
+        <br>
+    </form>    
+</body>
+</html>
